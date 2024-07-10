@@ -1,0 +1,19 @@
+[package]
+name = "cockroach_"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = {version  = "2.0", features = ["postgres", "serde_json", "64-column-tables", "time"] }
+strum = { version = "0.26.2", features = ["derive"] }
+serde_json = "*"
+serde = { version = "*", features = ["derive"]}
+time = { version = "0.3.35", features = ["serde", "serde-well-known", "std"] }
+axum = {version = "*"}
+anyhow = {version = "*"}
+tokio = {version = "*"}
+futures = {version = "*"}
+
+diesel_models = {version = "*", path = "/Users/akshay.s/code/hyperswitch-cloud/hyperswitch_oss/crates/diesel_models"}
+common_utils = {version = "*", path = "/Users/akshay.s/code/hyperswitch-cloud/hyperswitch_oss/crates/common_utils"}
+common_enums = {version = "*", path = "/Users/akshay.s/code/hyperswitch-cloud/hyperswitch_oss/crates/common_enums"}
