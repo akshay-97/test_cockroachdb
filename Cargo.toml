@@ -17,3 +17,6 @@ futures = {version = "*"}
 diesel_models = {version = "*", path = "/Users/akshay.s/code/hyperswitch-cloud/hyperswitch_oss/crates/diesel_models"}
 common_utils = {version = "*", path = "/Users/akshay.s/code/hyperswitch-cloud/hyperswitch_oss/crates/common_utils"}
 common_enums = {version = "*", path = "/Users/akshay.s/code/hyperswitch-cloud/hyperswitch_oss/crates/common_enums"}
+
+# diesel_models  = {git = "https://github.com/juspay/hyperswitch.git", rev = "d44deb165f35b238c3e6231a12584bb1b3ed66d7"}
+# common_utils  = {git = "https://github.com/juspay/hyperswitch.git", rev = "d44deb165f35b238c3e6231a12584bb1b3ed66d7"}

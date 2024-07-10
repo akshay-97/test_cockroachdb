@@ -61,6 +61,8 @@ impl Pool{
             vec_d.push_back(conn)
         }
 
+        //println!("is connection pool empty {:?}", vec_d.len());
+
         Ok(Self{
             workers: Arc::new(Mutex::new(vec_d))
         })

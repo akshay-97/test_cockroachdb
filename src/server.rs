@@ -1,6 +1,6 @@
-use axum::routing::{get};
+use axum::routing::get;
 use axum::extract::{State, Path};
-use crate::ds::{create_payment_flow, fetch_payments_flow};
+use crate::ds::{create_payment_flow, fetch_payments_flow, update_payments};
 use crate::pool::Pool;
 
 pub async fn mk_server(pool : Pool) -> anyhow::Result<axum::Router>{
@@ -16,19 +16,20 @@ async fn start_payment(State(state) : State<Pool>, Path(payment_id) : Path<Strin
     -> Result<axum::Json<()>, ()>
 {   
     //println!("start_payment");
-    state.execute(|c| create_payment_flow(c,payment_id)).await;
+    let _ = state.execute(|c| create_payment_flow(c,payment_id)).await;
     Ok(axum::Json(()))
 }
 
 async fn show_payment(State(state) : State<Pool>, Path(payment_id) : Path<String>)
     -> Result<axum::Json<()>, ()>
 {
-    state.execute(|c| fetch_payments_flow(c, payment_id)).await;
+    let _ = state.execute(|c| fetch_payments_flow(c, payment_id)).await;
     Ok(axum::Json(()))
 }
 
 async fn update_payment(State(state) : State<Pool> , Path(payment_id) : Path<String>)
     -> Result<axum::Json<()>, ()>
 {
+    let _ = state.execute(|c| update_payments(c, payment_id)).await;
     Ok(axum::Json(()))
 }

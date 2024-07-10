@@ -1,7 +1,9 @@
 from locust import HttpUser, TaskSet, SequentialTaskSet, task,  between
+import uuid
+myuuid = uuid.uuid4()
 config_set = {
     'count' : 0,
-    'prefix' : "asdas124Poo92032"
+    'prefix' : str(myuuid)
 }
 
 class PaymentsBehaviour(SequentialTaskSet):
