@@ -561,6 +561,7 @@ dependencies = [
 [[package]]
 name = "common_enums"
 version = "0.1.0"
+source = "git+https://github.com/juspay/hyperswitch.git?rev=af8b554dabe43f80601b1adcb777996d6ca3133e#af8b554dabe43f80601b1adcb777996d6ca3133e"
 dependencies = [
  "diesel",
  "router_derive",
@@ -573,6 +574,7 @@ dependencies = [
 [[package]]
 name = "common_utils"
 version = "0.1.0"
+source = "git+https://github.com/juspay/hyperswitch.git?rev=af8b554dabe43f80601b1adcb777996d6ca3133e#af8b554dabe43f80601b1adcb777996d6ca3133e"
 dependencies = [
  "bytes",
  "common_enums",
@@ -828,6 +830,7 @@ dependencies = [
 [[package]]
 name = "diesel_models"
 version = "0.1.0"
+source = "git+https://github.com/juspay/hyperswitch.git?rev=af8b554dabe43f80601b1adcb777996d6ca3133e#af8b554dabe43f80601b1adcb777996d6ca3133e"
 dependencies = [
  "async-bb8-diesel",
  "common_enums",
@@ -1474,6 +1477,7 @@ dependencies = [
 [[package]]
 name = "masking"
 version = "0.1.0"
+source = "git+https://github.com/juspay/hyperswitch.git?rev=af8b554dabe43f80601b1adcb777996d6ca3133e#af8b554dabe43f80601b1adcb777996d6ca3133e"
 dependencies = [
  "diesel",
  "erased-serde",
@@ -2290,6 +2294,7 @@ dependencies = [
 [[package]]
 name = "router_derive"
 version = "0.1.0"
+source = "git+https://github.com/juspay/hyperswitch.git?rev=af8b554dabe43f80601b1adcb777996d6ca3133e#af8b554dabe43f80601b1adcb777996d6ca3133e"
 dependencies = [
  "indexmap 2.2.6",
  "proc-macro2",
@@ -2301,6 +2306,7 @@ dependencies = [
 [[package]]
 name = "router_env"
 version = "0.1.0"
+source = "git+https://github.com/juspay/hyperswitch.git?rev=af8b554dabe43f80601b1adcb777996d6ca3133e#af8b554dabe43f80601b1adcb777996d6ca3133e"
 dependencies = [
  "cargo_metadata",
  "config",
