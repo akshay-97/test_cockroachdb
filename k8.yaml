@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ck-setup
+spec:
+  replicas: 4
+  template:
+    spec:
+      containers:
+      - image: docker.io/library/roach:init
+        name: ck-setup
+        env:
+        - name: "DATABASE_URL"
+          value: "postgresql://admin@127.0.0.1:8080/seq_test"

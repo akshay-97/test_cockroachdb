@@ -1,0 +1,7 @@
+./target/
+target*
+*.sql
+./cockroach-data/
+*.yaml
+./dump/
+./load_t/
